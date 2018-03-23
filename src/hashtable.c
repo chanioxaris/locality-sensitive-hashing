@@ -1,4 +1,6 @@
 #include "functions.h"
+#include "hashtable.h"
+#include "preprocessing.h"
 
 // Function that initialize an array of L hashtables
 hashtable **hashtable_init(int L, int dataset_size)

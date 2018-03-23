@@ -1,8 +1,6 @@
 #ifndef _PREPROCESSING_
 #define _PREPROCESSING_
 
-#include "functions.h"
-
 // Declare functions of preprocessing.c file
 database *preprocessing(char *, int, int, int);
 

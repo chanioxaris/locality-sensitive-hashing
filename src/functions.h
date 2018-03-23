@@ -10,12 +10,6 @@
 
 #include "structs.c"
 
-#include "preprocessing.h"
-#include "hashtable.h"
-#include "metric_functions.h"
-#include "search.h"
-#include "output_functions.h"
-#include "quicksort.h"
 
 #define PATH_LENGTH 32
 #define LINE_LENGTH 26000

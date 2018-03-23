@@ -1,9 +1,9 @@
 #include "functions.h"
-
-double frechet_distance(double **, double **, int, int, int);
-
-double DTW_distance(double **, double **, int, int, int);
-
+#include "search.h"
+#include "metric_functions.h"
+#include "output_functions.h"
+#include "quicksort.h"
+#include "hashtable.h"
 
 // Function that searches for query curve 
 void search(char *query_file, char *output_file, database *data_search, int L, int K, int hash_function, int metric_function)

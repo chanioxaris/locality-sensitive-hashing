@@ -1,8 +1,6 @@
 #ifndef _HASHTABLE_
 #define _HASHTABLE_
 
-#include "functions.h"
-
 // Declare functions of hashtable.c file
 hashtable **hashtable_init(int, int);
 

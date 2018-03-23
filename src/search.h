@@ -1,8 +1,6 @@
 #ifndef _SEARCH_
 #define _SEARCH_
 
-#include "functions.h"
-
 // Declare functions of search.c file
 void search(char *, char *, database *, int, int, int, int);
 

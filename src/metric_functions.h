@@ -1,8 +1,6 @@
 #ifndef _METRIC_FUNCTIONS_
 #define _METRIC_FUNCTIONS_
 
-#include "functions.h"
-
 // Declare functions of metric_functions.c file
 double max_2(double, double);
 

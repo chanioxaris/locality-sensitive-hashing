@@ -1,6 +1,7 @@
 /* Code taken from http://www.geeksforgeeks.org/quick-sort/ that implements QuickSort for sorting our neigh-id array efficiently */
    
-#include "functions.h"   
+#include "functions.h"
+#include "quicksort.h"
    
 // A utility function to swap two elements
 void swap(int* a, int* b)

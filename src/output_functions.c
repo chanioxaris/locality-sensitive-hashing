@@ -1,4 +1,5 @@
 #include "functions.h"
+#include "output_functions.h"
 
 // Function that appends to output file if no -stats was requested
 void output_nonstats(char *output_file, int curve_ID, int metric_function, int hash_function, int found_grid,

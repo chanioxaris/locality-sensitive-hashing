@@ -1,4 +1,8 @@
 #include "functions.h"
+#include "output_functions.h"
+#include "hashtable.h"
+#include "search.h"
+#include "preprocessing.h"
 
 int main(int argc, char* argv[])
 {

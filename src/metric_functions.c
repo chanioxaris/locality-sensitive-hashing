@@ -1,4 +1,5 @@
 #include "functions.h"
+#include "metric_functions.h"
 
 // Function that finds out the max value between two numbers
 double max_2(double a, double b)

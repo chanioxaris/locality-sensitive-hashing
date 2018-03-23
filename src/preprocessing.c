@@ -1,4 +1,6 @@
 #include "functions.h"
+#include "preprocessing.h"
+#include "hashtable.h"
 
 // Function that reads the data from the input file and creates the hashtables
 database *preprocessing(char *input_file, int L, int K, int hash_function)

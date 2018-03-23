@@ -34,6 +34,5 @@ quicksort.o: quicksort.c
 search.o: search.c
 	$(GCCC) search.c	
 
-
 clean:
 	rm -rf $(OBJS) $(EXEC)
