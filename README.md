@@ -17,11 +17,11 @@ where ```mi``` the total points included in i curve, ```(xij,yij)``` the coordin
 The format of input text file, described by the following structure:
 ```
 @R: 2.0
-curve_idS1 mS1 (xS11,y11) (xS12,y12) (xS13,y13) ... (xS1mS1,yS1mS1)
-curve_idS2 mS2 (xS21,y21) (xS22,y22) (xS23,y23) ... (xS2mS2,yS2mS2)
-curve_idS3 mS3 (xS31,y31) (xS32,y32) (xS33,y33) ... (xS3mS3,yS3mS3)
+curve_idS1 mS1 (xS11,yS11) (xS12,yS12) (xS13,yS13) ... (xS1mS1,yS1mS1)
+curve_idS2 mS2 (xS21,yS21) (xS22,yS22) (xS23,yS23) ... (xS2mS2,yS2mS2)
+curve_idS3 mS3 (xS31,yS31) (xS32,yS32) (xS33,yS33) ... (xS3mS3,yS3mS3)
 ...
-curve_idSN mSN (xN1,yN1) (xN2,yN2) (xN3,yN3) ... (xNmN,yNmN)
+curve_idSN mSN (xSN1,ySN1) (xSN2,ySN2) (xSN3,ySN3) ... (xSNmSN,ySNmSN)
 ```
 where ```mSi``` the total points included in i curve, ```(xSij,ySij)``` the coordinates of point j in Si curve and ```R``` the radius of neighbours search
 
