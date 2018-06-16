@@ -11,7 +11,7 @@ curve_id3 m3 (x31,y31) (x32,y32) (x33,y33) ... (x3m3,y3m3)
 ...
 curve_idN mN (xN1,yN1) (xN2,yN2) (xN3,yN3) ... (xNmN,yNmN)
 ```
-where ```mi``` the total points included in j curve, ```(xij,yij)``` the coordinates of point j in i curve, when dimesion is equal to 2
+where ```mi``` the total points included in i curve, ```(xij,yij)``` the coordinates of point j in i curve, when dimesion is equal to 2
 
 ### Query file 
 The format of input text file, described by the following structure:
@@ -23,7 +23,7 @@ curve_idS3 mS3 (xS31,y31) (xS32,y32) (xS33,y33) ... (xS3mS3,yS3mS3)
 ...
 curve_idSN mSN (xN1,yN1) (xN2,yN2) (xN3,yN3) ... (xNmN,yNmN)
 ```
-where ```mSi``` the total points included in j curve, ```(xSij,ySij)``` the coordinates of point j in Si curve and ```R``` the radius of neighbours search
+where ```mSi``` the total points included in i curve, ```(xSij,ySij)``` the coordinates of point j in Si curve and ```R``` the radius of neighbours search
 
 
 ## Compile
