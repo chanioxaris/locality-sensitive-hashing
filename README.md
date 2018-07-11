@@ -23,9 +23,9 @@ In general, DTW is a method that calculates an optimal match between two given s
 The [optimal match](https://en.wikipedia.org/wiki/Optimal_matching) is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
 
 
-### Input data files
+## Input data files
 
-#### Input file 
+### Input file 
 The format of input text file, described by the following structure:
 ```
 @dimension {2,3,4} 
@@ -37,7 +37,7 @@ curve_idN mN (xN1,yN1) (xN2,yN2) (xN3,yN3) ... (xNmN,yNmN)
 ```
 where ```mi``` the total points included in i curve, ```(xij,yij)``` the coordinates of point j in i curve, when dimesion is equal to 2
 
-#### Query file 
+### Query file 
 The format of query text file, described by the following structure:
 ```
 @R: 2.0
