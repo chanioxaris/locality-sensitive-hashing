@@ -1,10 +1,11 @@
 ## Overview
 Experimental implementation of the paper with title 'Locality-sensitive hashing of curves' published by A. Driemel and F. Silvestri. More information you can find at [this PDF file](http://drops.dagstuhl.de/opus/volltexte/2017/7203/pdf/LIPIcs-SoCG-2017-37.pdf) or at [docs folder](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/tree/master/doc) containing the paper.
 
-## Locality-sensitive hasing
-One of the main applications of LSH is to provide a method for efficient approximate nearest neighbor search algorithms. Consider an LSH family F. The algorithm has two main parameters: the width parameter k and the number of hash tables L.
 
-In the first step, we define a new family G of hash functions g, where each function g is obtained by concatenating k functions h1, .... ,hk from F, i.e., g(p) = [h1(p), ...., hk(p)]. In other words, a random hash function g is obtained by concatenating k randomly chosen hash functions from F. The algorithm then constructs L hash tables, each corresponding to a different randomly chosen hash function g.
+## Locality-sensitive hashing
+One of the main applications of LSH is to provide a method for efficient approximate nearest neighbor search algorithms. Consider an LSH family ![F](https://latex.codecogs.com/gif.latex?F). The algorithm has two main parameters: the width parameter k and the number of hash tables L.
+
+In the first step, we define a new family ![G](https://latex.codecogs.com/gif.latex?G) of hash functions g, where each function g is obtained by concatenating k functions ![](https://latex.codecogs.com/gif.latex?h_1,....,&space;h_k) from ![F](https://latex.codecogs.com/gif.latex?F), i.e., ![](https://latex.codecogs.com/gif.latex?g(p)&space;=&space;[h_1(p),....,&space;h_k(p)]). In other words, a random hash function g is obtained by concatenating k randomly chosen hash functions from F. The algorithm then constructs L hash tables, each corresponding to a different randomly chosen hash function g.
 
 In the preprocessing step we hash all n points from the data set S into each of the L hash tables. Given that the resulting hash tables have only n non-zero entries, one can reduce the amount of memory used per each hash table to O(n) using standard hash functions.
 
