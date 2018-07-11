@@ -12,6 +12,16 @@ Imagine a man traversing a finite curved path while walking his dog on a leash, 
 ![Frechet Distance](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/blob/master/img/frechet_distance.jpg)
 
 #### Dynamic Time Warping (DFT)
+In time series analysis, dynamic time warping (DTW) is one of the algorithms for measuring similarity between two temporal sequences, which may vary in speed. For instance, similarities in walking could be detected using DTW, even if one person was walking faster than the other, or if there were accelerations and decelerations during the course of an observation. 
+
+In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules:
+* Every index from the first sequence must be matched with one or more indices from the other sequence, and vice versa
+* The first index from the first sequence must be matched with the first index from the other sequence (but it does not have to be its only match)
+* The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
+* The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa
+
+The optimal match is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
+
 
 ### Input file 
 The format of input text file, described by the following structure:
