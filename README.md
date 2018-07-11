@@ -2,17 +2,17 @@
 Experimental implementation of the paper with title 'Locality-sensitive hashing of curves' published by A. Driemel and F. Silvestri. More information you can find at [this PDF file](http://drops.dagstuhl.de/opus/volltexte/2017/7203/pdf/LIPIcs-SoCG-2017-37.pdf) or at [docs folder](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/tree/master/doc) containing the paper.
 
 
-### Metric Distance
+## Metric Distance
 
-#### Discrete Frechet Distance (DFD)
+### Discrete Frechet Distance (DFD)
 The [Fréchet distance](https://en.wikipedia.org/wiki/Fr%C3%A9chet_distance) is a measure of similarity between curves that takes into account the location and ordering of the points along the curves. It is named after [Maurice Fréchet](https://en.wikipedia.org/wiki/Maurice_Fr%C3%A9chet).
 
 Imagine a man traversing a finite curved path while walking his dog on a leash, with the dog traversing a separate one. Assume that the dog varies her speed to keep as much slack in her leash as possible: the Fréchet distance between the two curves is the length of the shortest leash sufficient for both to traverse their separate paths. Note that the definition is symmetric with respect to the two curves—the Frechet distance would be the same if the dog was walking her owner.
 
 ![Frechet Distance](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/blob/master/img/frechet_distance.jpg)
 
-#### Dynamic Time Warping (DFT)
-In time series analysis, dynamic time warping (DTW) is one of the algorithms for measuring similarity between two temporal sequences, which may vary in speed. For instance, similarities in walking could be detected using DTW, even if one person was walking faster than the other, or if there were accelerations and decelerations during the course of an observation. 
+### Dynamic Time Warping (DFT)
+In [time series analysis](https://en.wikipedia.org/wiki/Time_series), dynamic time warping (DTW) is one of the algorithms for measuring similarity between two temporal sequences, which may vary in speed. For instance, similarities in walking could be detected using DTW, even if one person was walking faster than the other, or if there were accelerations and decelerations during the course of an observation. 
 
 In general, DTW is a method that calculates an optimal match between two given sequences (e.g. time series) with certain restriction and rules:
 * Every index from the first sequence must be matched with one or more indices from the other sequence, and vice versa
@@ -20,10 +20,12 @@ In general, DTW is a method that calculates an optimal match between two given s
 * The last index from the first sequence must be matched with the last index from the other sequence (but it does not have to be its only match)
 * The mapping of the indices from the first sequence to indices from the other sequence must be monotonically increasing, and vice versa
 
-The optimal match is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
+The [optimal match](https://en.wikipedia.org/wiki/Optimal_matching) is denoted by the match that satisfies all the restrictions and the rules and that has the minimal cost, where the cost is computed as the sum of absolute differences, for each matched pair of indices, between their values.
 
 
-### Input file 
+### Input data files
+
+#### Input file 
 The format of input text file, described by the following structure:
 ```
 @dimension {2,3,4} 
@@ -35,7 +37,7 @@ curve_idN mN (xN1,yN1) (xN2,yN2) (xN3,yN3) ... (xNmN,yNmN)
 ```
 where ```mi``` the total points included in i curve, ```(xij,yij)``` the coordinates of point j in i curve, when dimesion is equal to 2
 
-### Query file 
+#### Query file 
 The format of query text file, described by the following structure:
 ```
 @R: 2.0
