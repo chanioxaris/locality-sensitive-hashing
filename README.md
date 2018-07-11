@@ -9,7 +9,6 @@ The [Fréchet distance](https://en.wikipedia.org/wiki/Fr%C3%A9chet_distance) is 
 
 Imagine a man traversing a finite curved path while walking his dog on a leash, with the dog traversing a separate one. Assume that the dog varies her speed to keep as much slack in her leash as possible: the Fréchet distance between the two curves is the length of the shortest leash sufficient for both to traverse their separate paths. Note that the definition is symmetric with respect to the two curves—the Frechet distance would be the same if the dog was walking her owner.
 
-![Frechet Distance](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/blob/master/img/frechet_distance.jpg)
 
 
 #### Dynamic Time Warping (DFT)
