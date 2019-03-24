@@ -1,5 +1,5 @@
 ## Overview
-Experimental implementation of the paper with title 'Locality-sensitive hashing of curves' published by A. Driemel and F. Silvestri. More information you can find at [this PDF file](http://drops.dagstuhl.de/opus/volltexte/2017/7203/pdf/LIPIcs-SoCG-2017-37.pdf) or at [docs folder](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/tree/master/doc) containing the paper.
+Experimental implementation of the paper 'Locality-sensitive hashing of curves' published by A. Driemel and F. Silvestri. More information you can find at [this PDF file](http://drops.dagstuhl.de/opus/volltexte/2017/7203/pdf/LIPIcs-SoCG-2017-37.pdf) or at [docs folder](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/tree/master/doc).
 
 
 ## Locality-sensitive hashing
