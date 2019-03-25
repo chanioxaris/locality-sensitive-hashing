@@ -1,5 +1,5 @@
 ## Overview
-Experimental implementation of the paper 'Locality-sensitive hashing of curves' published by A. Driemel and F. Silvestri. More information you can find at [this PDF file](http://drops.dagstuhl.de/opus/volltexte/2017/7203/pdf/LIPIcs-SoCG-2017-37.pdf) or at [docs folder](https://github.com/chanioxaris/Hashing-Search-PolygonalCurves/tree/master/doc).
+Experimental implementation of the paper 'Locality-sensitive hashing of curves' published by A. Driemel and F. Silvestri. More information you can find at [this PDF file](http://drops.dagstuhl.de/opus/volltexte/2017/7203/pdf/LIPIcs-SoCG-2017-37.pdf) or at [docs folder](https://github.com/chanioxaris/locality-sensitive-hashing/tree/master/doc).
 
 
 ## Locality-sensitive hashing
@@ -18,7 +18,7 @@ The [Fréchet distance](https://en.wikipedia.org/wiki/Fr%C3%A9chet_distance) is 
 
 Imagine a man traversing a finite curved path while walking his dog on a leash, with the dog traversing a separate one. Assume that the dog varies her speed to keep as much slack in her leash as possible: the Fréchet distance between the two curves is the length of the shortest leash sufficient for both to traverse their separate paths. Note that the definition is symmetric with respect to the two curves—the Frechet distance would be the same if the dog was walking her owner.
 
-![Frechet Distance](https://github.com/chanioxaris/locality-sensitive-hashing-curves/blob/master/img/frechet_distance.jpg)
+![Frechet Distance](https://github.com/chanioxaris/locality-sensitive-hashing/blob/master/img/frechet_distance.jpg)
 
 ### Dynamic Time Warping (DFT)
 In [time series analysis](https://en.wikipedia.org/wiki/Time_series), dynamic time warping (DTW) is one of the algorithms for measuring similarity between two temporal sequences, which may vary in speed. For instance, similarities in walking could be detected using DTW, even if one person was walking faster than the other, or if there were accelerations and decelerations during the course of an observation. 
